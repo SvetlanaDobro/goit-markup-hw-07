@@ -17,30 +17,108 @@
 </head>
 
 <body>
+    
     <!--HEADER-->
     <header class="page-header page-header-portfolio">
         <div class="page-header-menu  container">
-        <nav class="page-nav">
-            <a class="logo logo-header link" href="./index.html"><span class="logo-accent">WEB</span>STUDIO</a>
-
-            <ul class="menu-nav list ">
-                <Li class="menu-item">
-                    <a class="menu-link menu-link-color link" href="./index.html">Studio</a></Li>
-                <li class="menu-item">
-                    <a class="menu-link underline menu-link-color-ressed link" href="./portfolio.html">Portfolio</a></li>
-                <li class="menu-item">
-                    <a class="menu-link menu-link-color link" href="">Contacts</a></li>
-            </ul>
-        </nav>
-
-        <address>
-            <ul class="address-list list">
-                <li class="address-item"><a class="modal-btn link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="address-item"><a class="phone-number link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-            
-        </address>
-    </div>
+            <nav class="page-nav">
+                <a class="logo logo-header link" href="./index.html"><span class="logo-accent">WEB</span>STUDIO</a>
+    
+                <ul class="menu-nav list ">
+                    <Li class="menu-item">
+                        <a class="menu-link menu-link-color link" href="./index.html">Studio</a>
+                    </Li>
+                    <li class="menu-item">
+                        <a class="menu-link underline menu-link-color-ressed  link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link menu-link-color link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <button type="button" class="mobil-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon-menu-ham" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu-ham"></use>
+                </svg>
+            </button>
+    
+            <address class="address">
+                <ul class="address-list list">
+                    <li class="address-item"><a class="modal-btn link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="address-item"><a class="phone-number link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+    
+            <!-- MOBIL-MODAL-MENU -->
+            <div class="mobil-menu js-menu-container">
+                <div class="mobil-menu-container container " id="mobile-menu">
+                    <button type="button" class="mobil-menu-close-btn js-close-menu">
+                        <svg class="icon-menu-close" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close1"></use>
+                        </svg></button>
+                    <nav class="mobil-menu-nav">
+                        <ul class="mobil-menu-nav-list list">
+                            <li class="mobil-menu-nav-item">
+                                <a class="mobil-menu-nav-link link" href="./index.html">Studio</a>
+                            </li>
+                            <li class="mobil-menu-nav-item">
+                                <a class="mobil-menu-nav-link link" href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="mobil-menu-nav-item">
+                                <a class="mobil-menu-nav-link link" href="">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="mobil-address">
+                        <ul class="mobil-address-list list">
+                            <li class="mobil-address-item">
+                                <a class="mobil-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </li>
+                            <li class="mobil-address-item">
+                                <a class="mobil-mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div class="mobil-soc">
+                        <ul class="mobil-soc-list list">
+                            <li class="mobil-soc-item">
+                                <a class="mobil-soc-link" href="">
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobil-soc-item">
+                                <a class="mobil-soc-link" href="">
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobil-soc-item">
+                                <a class="mobil-soc-link" href="">
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobil-soc-item">
+                                <a class="mobil-soc-link" href="">
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
     </header>
 
     <main>
@@ -92,7 +170,7 @@
                             media="(min-width:480px)">
                             
                         
-                    <img src="./images/img-banking-mobile.jpg" alt="interface" height="300">
+                    <img src="./images/img-banking-mobile.jpg" alt="interface"  height="300">
                         </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                     Cloud Storage App</p>
@@ -107,7 +185,16 @@
                 <li class="card-item">
                     <a class="card-link link" href="">
                     <div class="overlay-img">
-                    <img src="./images/card-payment.jpg" alt="payment" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/payment-desktop.jpg 1x, ./images/payment-desktop@2x.jpg 2x" media="(min-width:1200px)">
+
+                            <source srcset="./images/payment-tablet.jpg 1x, ./images/payment-tablet@2x.jpg 2x" media="(min-width:768px)">
+
+                            <source srcset="./images/payment-mobile.jpg 1x,
+                             ./images/payment-mobile@2x.jpg 2x" 
+                            media="(min-width:480px)">
+                    <img src="./images/card-payment.jpg" alt="payment"  height="300">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p>
@@ -121,7 +208,15 @@
                 <li class="card-item">
                     <a class="card-link link" href="">
                     <div class="overlay-img">
-                    <img src="./images/card-meditaion.jpg" alt="meditaion app" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/meditaion-desktop.jpg 1x, ./images/meditaion-desktop@2x.jpg 2x" media="(min-width:1200px)">
+
+                            <source srcset="./images/meditaion-tablet.jpg 1x, ./images/meditaion-tablet@2x.jpg 2x" media="(min-width:768px)">
+
+                            <source srcset="./images/meditaion-mobile.jpg 1x, ./images/meditaion-mobile@2x.jpg 2x"
+                            media="(min-width:480px)">
+                    <img src="./images/card-meditaion.jpg" alt="meditaion app"  height="300">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p>
@@ -136,7 +231,15 @@
                 <li class="card-item">
                     <a class="card-link link" href="">
                     <div class="overlay-img">
-                    <img src="./images/card-taxi.jpg" alt="car" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/taxi-desktop.jpg 1x, ./images/taxi-desktop@2x.jpg 2x" media="(min-width:1200px)">
+
+                            <source srcset="./images/taxi-tablet.jpg 1x, ./images/taxi-tablet@2x.jpg 2x" media="(min-width:768px)">
+
+                            <source srcset="./images/taxi-mobile.jpg 1x, ./images/taxi-mobile@2x.jpg 2x"
+                            media="(min-width:480px)">
+                    <img src="./images/card-taxi.jpg" alt="car"  height="300">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p>
@@ -150,7 +253,14 @@
                 <li class="card-item">
                     <a class="card-link link" href="">
                     <div class="overlay-img">
-                    <img src="./images/card-screen.jpg" alt="screen" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/screen-desktop.jpg 1x, ./images/screen-desktop@2x.jpg 2x" media="(min-width:1200px)">
+
+                            <source srcset="./images/screen-tablet.jpg 1x, ./images/screen-tablet@2x.jpg 2x" media="(min-width:768px)">
+
+                            <source srcset="./images/screen-mobile.jpg 1x, ./images/screen-mobile@2x.jpg 2x" media="(min-width:480px)">
+                    <img src="./images/card-screen.jpg" alt="screen"  height="300">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p>
@@ -164,7 +274,14 @@
                 <li class="card-item">
                     <a class="card-link link" href="">
                     <div class="overlay-img">
-                    <img src="./images/card-online.jpg" alt="girl with phone" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/online-desktop.jpg 1x, ./images/online-desktop@2x.jpg 2x" media="(min-width:1200px)">
+
+                            <source srcset="./images/online-tablet.jpg 1x, ./images/online-tablet@2x.jpg 2x" media="(min-width:768px)">
+
+                            <source srcset="./images/online-mobile.jpg 1x, ./images/online-mobile@2x.jpg 2x" media="(min-width:480px)">
+                    <img src="./images/card-online.jpg" alt="girl with phone"  height="300">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p>
@@ -178,7 +295,14 @@
                 <li class="card-item">
                     <a class="card-link link" href="">
                     <div class="overlay-img">
-                    <img src="./images/card-instagram.jpg" alt="instagram" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/instagram-desktop.jpg 1x, ./images/instagram-desktop@2x.jpg 2x" media="(min-width:1200px)">
+
+                            <source srcset="./images/instagram-tablet.jpg 1x, ./images/instagram-tablet@2x.jpg 2x" media="(min-width:768px)">
+
+                            <source srcset="./images/instagram-mobile.jpg 1x, ./images/instagram-mobile@2x.jpg 2x" media="(min-width:480px)">
+                    <img src="./images/card-instagram.jpg" alt="instagram"  height="300">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p>
@@ -192,7 +316,14 @@
                 <li class="card-item">
                     <a class="card-link link" href="">
                     <div class="overlay-img">
-                    <img src="./images/card-food.jpg" alt="food" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/food-desktop.jpg 1x, ./images/food-desktop@2x.jpg 2x" media="(min-width:1200px)">
+
+                            <source srcset="./images/food-tablet.jpg 1x, ./images/food-tablet@2x.jpg 2x" media="(min-width:768px)">
+
+                            <source srcset="./images/food-mobile.jpg 1x, ./images/food-mobile@2x.jpg 2x" media="(min-width:480px)">
+                    <img src="./images/card-food.jpg" alt="food"  height="300">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p>
@@ -206,7 +337,14 @@
                 <li class="card-item">
                     <a class="card-link link" href="">
                     <div class="overlay-img">
-                    <img src="./images/card-coffee.jpg" alt="coffee" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/coffee-desktop.jpg 1x, ./images/coffee-desktop@2x.jpg 2x" media="(min-width:1200px)">
+
+                            <source srcset="./images/coffee-tablet.jpg 1x, ./images/coffee-tablet@2x.jpg 2x" media="(min-width:768px)">
+
+                            <source srcset="./images/coffee-mobile.jpg 1x, ./images/coffee-mobile@2x.jpg 2x" media="(min-width:480px)">
+                    <img src="./images/card-coffee.jpg" alt="coffee"  height="300">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p>
@@ -266,7 +404,7 @@
     
             <div class="footer-mail-input">
                 <p class="footer-title">Subscribe</p>
-                <form class="form-foter">
+                <form class="form-footer">
                     <input class="footer-input" aria-label="email" type="email" name="mail" placeholder="E-mail" />
                     <button class="footer-btn" type="submit">Subscribe
                         <svg width="24" height="24">
@@ -280,7 +418,8 @@
     </footer>
     
    
-        
+    <script src="./js/mobile-menu.js"></script>
+
     </body>
 
     </html>
