@@ -148,7 +148,7 @@ body {
     height: 22px;
   }
 
-  /* ____MOBILE-MENU____ */
+  /* _________MOBILE-MENU_________ */
   .mobil-menu {
     position: fixed;
     width: 100%;
@@ -199,6 +199,12 @@ body {
   .mobil-menu-nav-item:not(:last-child) {
     margin-bottom: 40px;
   }
+  .active-page {
+    color: var(--pressed-state-color);
+  }
+
+  .mobil-address-soc {
+  }
   .mobil-address {
     margin-top: 284px;
     margin-bottom: 48px;
@@ -224,7 +230,7 @@ body {
   }
   .mobil-soc-list {
     display: flex;
-    justify-content: center;
+
     align-items: center;
     gap: 56px;
   }
@@ -242,15 +248,14 @@ body {
     background-color: var(--primary-brand-color);
   }
 
-  /*__________HERO__________*/
+  /*__________HERO-MOBILE__________*/
   .hero-title {
     display: none;
   }
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
-    padding-left: 54px;
-    padding-right: 54px;
+
     text-align: center;
     background: var(--dark-color);
   }
@@ -259,7 +264,7 @@ body {
   }
 
   .mobile-hero-title {
-    width: 320px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
 
@@ -288,7 +293,7 @@ body {
   .hero-btn:focus {
     background: var(--pressed-state-color);
   }
-  /* _____________SECTION BENEFITS______________ */
+  /* _____________SECTION-BENEFITS-MOBILE______________ */
   .benefits {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -303,13 +308,14 @@ body {
     color: var(--dark-color);
   }
   .benefits-section-description {
-    width: 396px;
+    max-width: 396px;
     font-weight: 500;
+    line-height: 1.5;
   }
   .benefits-item:not(:last-child) {
     margin-bottom: 72px;
   }
-  /*___________________SECTION TEAM__________________*/
+  /*___________________SECTION-TEAM-MOBILE__________________*/
   .team {
     padding-top: 96px;
     padding-bottom: 128px;
@@ -334,13 +340,15 @@ body {
   .team-item:not(:last-child) {
     margin-bottom: 72px;
   }
-  .section-title {
+  .team-section-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
-  .section-description {
+  .team-section-description {
+    margin-top: 8px;
+    margin-bottom: 8px;
     font-weight: 400;
   }
   .content {
@@ -384,7 +392,7 @@ body {
     width: 16px;
     height: 16px;
   }
-  /*___________________SECTION CUSTOMERS_________________*/
+  /*___________________SECTION-CUSTOMERS-MOBILE_________________*/
   .customers {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -403,7 +411,7 @@ body {
   }
 
   .customers-item {
-    width: 168px;
+    width: 190px;
     height: 88px;
   }
   .customers-link {
@@ -430,7 +438,7 @@ body {
   .customers-link:focus .customers-icon {
     fill: var(--pressed-state-color);
   }
-  /*_____________________FOOTER________________________*/
+  /*_____________________FOOTER-MOBILE________________________*/
   .page-footer {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -480,9 +488,11 @@ body {
   .social-link-footer:focus {
     background-color: #31d0aa;
   }
-
+  .footer-mail-input {
+    width: 100%;
+  }
   .form-footer {
-    width: 453px;
+    max-width: 398px;
   }
   .footer-input {
     height: 40px;
@@ -513,6 +523,18 @@ body {
     color: var(--white-color);
     background-color: var(--primary-brand-color);
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 427px) {
+  .customers-item {
+    width: calc((100%-1 * 16px) / 3);
+    flex-basis: 47%;
+  }
+  .mobil-tel-link {
+    font-size: 26px;
+  }
+  .mobil-soc-list {
+    gap: 35px;
   }
 }
 
@@ -607,7 +629,7 @@ body {
     color: var(--pressed-state-color);
   }
 
-  /*__________HERO__________*/
+  /*__________HERO-TABLET__________*/
   .hero {
     padding-top: 112px;
     padding-bottom: 108px;
@@ -648,7 +670,7 @@ body {
     background: var(--pressed-state-color);
   }
 
-  /* _____________SECTION BENEFITS______________ */
+  /* _____________SECTION-BENEFITS-TABLET______________ */
   .benefits {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -677,7 +699,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-  /*___________________SECTION TEAM__________________*/
+  /*___________________SECTION-TEAM-TABLET__________________*/
   .team {
     padding-top: 96px;
     padding-bottom: 104px;
@@ -765,7 +787,7 @@ body {
     height: 16px;
   }
 
-  /*_____________SECTION CUSTOMERS__________________*/
+  /*_____________SECTION-CUSTOMERS-TABLET__________________*/
   .customers {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -810,19 +832,18 @@ body {
   .customers-link:focus .customers-icon {
     fill: var(--pressed-state-color);
   }
-  /*___________________FOOTER________________________*/
+  /*___________________FOOTER-TABLET________________________*/
   .page-footer {
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: 93px;
+
     background: var(--dark-color);
   }
 
   .footer {
     display: flex;
     flex-wrap: wrap;
-
-    align-items: flex-start;
+    width: 565px;
   }
   .footer-description {
     width: 264px;
@@ -918,7 +939,7 @@ body {
     line-height: 1.5;
   }
 
-  /*______________HERO______________*/
+  /*______________HERO-DESKTOP______________*/
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -934,7 +955,7 @@ body {
     color: var(--white-color);
   }
 
-  /*_______________SECTION BENEFITS______________*/
+  /*_______________SECTION-BENEFITS-DESKTOP______________*/
   .benefits {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -987,7 +1008,7 @@ body {
     background-image: url(../images/astronaut.svg);
   }
 
-  /*_______________SECTION WORK__________________*/
+  /*_______________SECTION-WORK-DESKTOP__________________*/
   .work {
     padding-bottom: 120px;
   }
@@ -1004,7 +1025,7 @@ body {
   .work-item:not(:last-child) {
     margin-right: 24px;
   }
-  /*___________________SECTION TEAM__________________*/
+  /*___________________SECTION-TEAM-DESKTOP__________________*/
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1019,7 +1040,7 @@ body {
     margin-right: 24px;
   }
 
-  /*__________________SECTION CUSTOMERS_______________*/
+  /*__________________SECTION-CUSTOMERS-DESKTOP_______________*/
   .customers {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1037,7 +1058,7 @@ body {
     margin-bottom: 0;
   }
 
-  /*_______________________FOOTER__________________________*/
+  /*_______________________FOOTER-DESKTOP__________________________*/
 
   .page-footer {
     padding-top: 100px;
@@ -1045,6 +1066,7 @@ body {
     padding-left: 0;
   }
   .footer {
+    width: 1158px;
     justify-content: space-between;
   }
   .footer-mail-input {
@@ -1056,7 +1078,7 @@ body {
 
 .hero-background {
   max-width: 1440px;
-  height: 600px;
+
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -1363,6 +1385,7 @@ body {
   z-index: 100;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
 
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--transition-duration-function),
@@ -1379,9 +1402,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-
+  height: 600px;
+  max-height: 90vh;
+  overflow-y: scroll;
   padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
+}
+
+@media screen and (min-width: 320px) and (max-width: 438px) {
+  .modal {
+    width: calc(100% - 2 * 15px);
+  }
 }
 .modal-close-btn {
   position: absolute;
