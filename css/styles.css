@@ -56,7 +56,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 766px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -148,7 +148,7 @@ body {
     height: 22px;
   }
 
-  /* _________MOBILE-MENU_________ */
+  /* ---------------MOBILE-MENU-------------- */
   .mobil-menu {
     position: fixed;
     width: 100%;
@@ -171,6 +171,8 @@ body {
   .mobil-menu-container {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     padding-left: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
@@ -184,6 +186,9 @@ body {
     padding: 0;
     border-radius: 50%;
     border: none;
+  }
+  .mobil-menu-nav {
+    flex-basis: 52vh;
   }
   .mobil-menu-nav-link {
     font-weight: 700;
@@ -206,7 +211,6 @@ body {
   .mobil-address-soc {
   }
   .mobil-address {
-    margin-top: 284px;
     margin-bottom: 48px;
   }
   .mobil-address-item:not(:last-child) {
@@ -1034,7 +1038,8 @@ body {
   /* .team-list {
     display: flex;
   } */
-  .team-item {
+  .team-list {
+    flex-wrap: nowrap;
   }
   .team-item:not(:last-child) {
     margin-right: 24px;
@@ -1356,7 +1361,7 @@ body {
   }
 }
 
-/*==========================DESKTOP-PORTFOLIO===============================*/
+/*==========================DESKTOP-PORTFOLIO=========================*/
 
 @media screen and (min-width: 1200px) {
   .portfolio {
@@ -1377,7 +1382,7 @@ body {
   }
 }
 
-/*-------------- MODAL------------- */
+/*------------------- MODAL----------------- */
 .backdrop {
   position: fixed;
   top: 0;
@@ -1385,7 +1390,7 @@ body {
   z-index: 100;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--transition-duration-function),
@@ -1402,9 +1407,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 600px;
+  /* height: 600px;
   max-height: 90vh;
-  overflow-y: scroll;
+  overflow-y: scroll; */
   padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
 }
@@ -1412,6 +1417,13 @@ body {
 @media screen and (min-width: 320px) and (max-width: 438px) {
   .modal {
     width: calc(100% - 2 * 15px);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    height: 600px;
+    max-height: 90vh;
+    overflow-y: scroll;
   }
 }
 .modal-close-btn {
